@@ -1,0 +1,7 @@
+---
+
+- name: pre-task
+  hosts: localhost
+  roles:
+    - role: set-ibmcloud-cli
+    - role: authenticate-ibmcloud

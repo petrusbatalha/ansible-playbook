@@ -1,0 +1,7 @@
+- name: Login with ibmcloud Cli
+  shell:
+    cmd: ibmcloud login --apikey "{{ API_KEY }}" -r "{{ REGION }}" -g "{{ RESOURCE_GROUP }}"
+
+- name: Select Code Engine Project
+  shell: 
+    cmd: ibmcloud ce project select -n "{{ PROJECT }}"

@@ -1,0 +1,7 @@
+- name: Install ibmcloud Cli
+  shell:
+    cmd: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
+- name: Install Code Engine plugin
+  shell:
+    cmd: ibmcloud plugin install code-engine
