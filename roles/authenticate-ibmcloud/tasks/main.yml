@@ -5,7 +5,3 @@
 - name: Select Code Engine Project
   shell: 
     cmd: ibmcloud ce project select -n "{{ PROJECT }}"
-
-- name: Update Code Engine application variable
-  shell:
-    cmd: ibmcloud ce application update -n "{{ APPLICATION }}" --env "{{ ENV_KEY }}"="{{ ENV_VALUE }}"

@@ -3,5 +3,6 @@
 - name: pre-task
   hosts: localhost
   roles:
-    - role: set-ibmcloud-cli
+    - role: install-cli-plugins
     - role: authenticate-ibmcloud
+    - role: update-code-engine
